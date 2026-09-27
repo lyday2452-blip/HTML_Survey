@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Market Research Survey</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 100%;
+            padding: 14px 18px 0 18px;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        .description {
+            color: #31577d;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            border-top: 1px dotted #ccc;
+            padding-top: 16px;
+            margin-top: 20px;
+        }
+
+        .title {
+            display: block;
+            font-weight: bold;
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 50%;
+            height: 32px;
+            font-size: 18px;
+            padding-left: 5px;
+        }
+
+        .radio,
+        .checkbox {
+            display: block;
+            margin: 14px 0;
+            color: #31577d;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 19px;
+            height: 19px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            height: 32px;
+            margin-left: 35px;
+            margin-top: -2px;
+        }
+
+        .footer {
+            height: 64px;
+            background-color: #f5f6fa;
+            margin-top: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #607d99;
+            font-size: 16px;
+        }
+
+        .wufoo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #e85d50;
+            margin-left: 12px;
+        }
+
+        .wufoo small {
+            display: block;
+            font-size: 8px;
+            text-align: center;
+            color: #555;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Market Research Survey</h1>
+
+    <div class="description">
+        Please take a few moments to complete this satisfaction survey.
+    </div>
+
+    <div class="section">
+        <label class="title">
+            What is your age range?
+        </label>
+
+        <select>
+            <option>18-24</option>
+            <option>25-34</option>
+            <option>35-50</option>
+            <option>50+</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <label class="title">
+            What is your yearly income range?
+        </label>
+
+        <select>
+            <option>$0 - $25,000</option>
+            <option>$25,001 - $50,000</option>
+            <option>$50,001 - $100,000</option>
+            <option>$100,000+</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <label class="title">
+            Gender Identity
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="gender">
+            Male
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="gender">
+            Female
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="gender">
+            Nonbinary
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="gender">
+            Other
+        </label>
+
+        <input type="text">
+    </div>
+
+    <div class="section">
+        <label class="title">
+            Which of the following products have your purchased in the last 2 months. Please check all that apply.
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox">
+            Product 1
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox">
+            Product 2
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox">
+            Product 3
+        </label>
+    </div>
+
+    <div class="section">
+        <label class="title">
+            How often would you use our new product?
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="frequency">
+            Daily
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="frequency">
+            Weekly
+        </label>
+    </div>
+
+</div>
+
+<div class="footer">
+    Powered by
+    <div class="wufoo">
+        Wufoo
+        <small>by SurveyMonkey</small>
+    </div>
+</div>
+
+</body>
+</html>
